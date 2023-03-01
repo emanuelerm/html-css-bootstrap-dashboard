@@ -17,9 +17,11 @@
 <body>
 
     <nav class="container-fluid d-flex my-3 bg-white align-items-center justify-content-between column-gap-4">
-        <div class="site-logo">
-            <img src="./img/logo.svg" alt="Boolean Logo" class="logo-big">
-            <img src="./img/mobile-logo.png" alt="Boolean Logo" class="logo-mobile d-none">
+        <div class="site-logo-big d-none d-lg-block">
+            <img src="./img/logo.svg" alt="Boolean Logo">
+        </div>
+        <div class="site-logo-mobile d-md-block d-lg-none">
+            <img src="./img/mobile-logo.png" alt="Boolean Logo" class="img-fluid">
         </div>
         <div class="search-tab bl-bg-grey rounded-2 flex-grow-1 d-flex">
             <span class="align-self-center mx-2">
@@ -28,9 +30,9 @@
             <input type="text" class="border-0 bl-bg-grey" placeholder="Prova a cercare: Lezioni di Laravel">
         </div>
         <div class="more-option">
-            <a href="#" class="text-black"><i class="fa-solid fa-list me-3"></i></a>
-            <a href="#" class="text-black"><i class="fa-solid fa-circle-question me-3"></i></a>
-            <a href="#" class="text-black"><i class="fa-solid fa-ellipsis-vertical me-3"></i></a>
+            <a href="#" class="text-black d-none d-lg-inline-block"><i class="fa-solid fa-list me-3"></i></a>
+            <a href="#" class="text-black d-none d-lg-inline-block"><i class="fa-solid fa-circle-question me-3"></i></a>
+            <a href="#" class="text-black d-none d-lg-inline-block"><i class="fa-solid fa-ellipsis-vertical me-3"></i></a>
             <a href="#" class="bl-text-orange"><i class="fa-solid fa-bell"></i></a>
         </div>
     </nav>

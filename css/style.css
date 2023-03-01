@@ -9,6 +9,10 @@ body {
 }
 
     /* Nav */
+nav {
+    height: 4.5rem;
+}
+
 .search-tab {
     height: 2.5rem;
 }
