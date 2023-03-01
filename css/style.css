@@ -9,10 +9,6 @@ body {
 }
 
     /* Nav */
-nav {
-    height: 4.5rem;
-}
-
 .search-tab {
     height: 2.5rem;
 }
@@ -22,13 +18,19 @@ nav {
 }
 
 #aside {
-    width: 7rem;
+    width: 8.5rem;
     height: 100%;
+    background-color: #051E34;
+    background-image: url("../img/sidebar-bg.png");
 }
 
 main {
-    width: calc(100% - 7rem);
+    width: calc(100% - 8.5rem);
     height: 100%;
+}
+
+.site-logo-mobile {
+    max-width: 28px;
 }
 
     /* Utility */

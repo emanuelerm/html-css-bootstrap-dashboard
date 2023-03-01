@@ -15,20 +15,26 @@
 </head>
 
 <body>
-
+    <!-- Navbar Header -->
     <nav class="container-fluid d-flex my-3 bg-white align-items-center justify-content-between column-gap-4">
+        
+        <!-- Logo -->
         <div class="site-logo-big d-none d-lg-block">
             <img src="./img/logo.svg" alt="Boolean Logo">
         </div>
         <div class="site-logo-mobile d-md-block d-lg-none">
             <img src="./img/mobile-logo.png" alt="Boolean Logo" class="img-fluid">
         </div>
+
+        <!-- Search tab -->
         <div class="search-tab bl-bg-grey rounded-2 flex-grow-1 d-flex">
             <span class="align-self-center mx-2">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </span>
             <input type="text" class="border-0 bl-bg-grey" placeholder="Prova a cercare: Lezioni di Laravel">
         </div>
+
+        <!-- Icons -->
         <div class="more-option">
             <a href="#" class="text-black d-none d-lg-inline-block"><i class="fa-solid fa-list me-3"></i></a>
             <a href="#" class="text-black d-none d-lg-inline-block"><i class="fa-solid fa-circle-question me-3"></i></a>
@@ -38,9 +44,35 @@
     </nav>
 
     <div class="wrapper d-flex">
-
+        <!-- Aside -->
         <section id="aside">
+            <div class="container-fluid">
+                <div class="row flex-column justify-content-between mx-auto">
+                    <div class="col d-flex flex-wrap mt-3 top-aside">
+                        <div class="d-flex">
+                            <a href="#" class="text-white"><i class="fa-solid fa-house"></i></a>
+                            <a href="#" class="text-white text-decoration-none ms-3"><p>Home</p></a>
+                        </div>
+                        
+                        <div class="d-flex">
+                            <a href="#" class="text-white"><i class="fa-solid fa-chart-simple"></i></a>
+                            <a href="#" class="text-white text-decoration-none ms-3"><p>Stats</p></a>
+                        </div>
+                        
+                        <div class="d-flex">
+                            <a href="#" class="text-white"><i class="fa-solid fa-signal"></i></a>
+                            <a href="#" class="text-white text-decoration-none ms-3"><p>Signal</p></a>
+                        </div>
+                    </div>
 
+                    <div class="col bottom-aside">
+                        <div class="d-flex">
+                            <a href="#" class="text-white"><i class="fa-solid fa-gear"></i></a>
+                            <a href="#" class="text-white text-decoration-none ms-3"><p>Admin</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <main>
