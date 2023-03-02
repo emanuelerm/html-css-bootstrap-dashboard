@@ -68,14 +68,11 @@
     }
 
     .square {
-        position: relative;
-        border: 1px solid white;
-        border-radius: 5px;
         width: 2rem;
         height: 2rem;
     }
 
-    .square span {
+    .position-center {
         display: flex;
         position: absolute;
         justify-content: center;
