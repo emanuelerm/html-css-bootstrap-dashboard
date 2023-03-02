@@ -17,7 +17,7 @@
 <body>
     <!-- Navbar Header -->
     <nav class="container-fluid d-flex my-3 bg-white align-items-center justify-content-between column-gap-4">
-        
+
         <!-- Logo -->
         <div class="site-logo-big d-none d-lg-block">
             <img src="./img/logo.svg" alt="Boolean Logo">
@@ -38,7 +38,8 @@
         <div class="more-option">
             <a href="#" class="text-black d-none d-lg-inline-block"><i class="fa-solid fa-list me-3"></i></a>
             <a href="#" class="text-black d-none d-lg-inline-block"><i class="fa-solid fa-circle-question me-3"></i></a>
-            <a href="#" class="text-black d-none d-lg-inline-block"><i class="fa-solid fa-ellipsis-vertical me-3"></i></a>
+            <a href="#" class="text-black d-none d-lg-inline-block"><i
+                    class="fa-solid fa-ellipsis-vertical me-3"></i></a>
             <a href="#" class="bl-text-orange"><i class="fa-solid fa-bell"></i></a>
         </div>
     </nav>
@@ -47,36 +48,295 @@
         <!-- Aside -->
         <section id="aside">
             <div class="container-fluid">
-                <div class="row flex-column justify-content-between mx-auto">
-                    <div class="col d-flex flex-wrap mt-3 top-aside">
+                <div class="row mx-auto">
+                    <div class="col d-flex flex-wrap mt-4 top-aside">
                         <div class="d-flex">
                             <a href="#" class="text-white"><i class="fa-solid fa-house"></i></a>
-                            <a href="#" class="text-white text-decoration-none ms-3"><p>Home</p></a>
+                            <a href="#" class="text-white text-decoration-none ms-3 bl-aside-none">
+                                <p>Home</p>
+                            </a>
                         </div>
-                        
+
                         <div class="d-flex">
                             <a href="#" class="text-white"><i class="fa-solid fa-chart-simple"></i></a>
-                            <a href="#" class="text-white text-decoration-none ms-3"><p>Stats</p></a>
+                            <a href="#" class="text-white text-decoration-none ms-3 bl-aside-none">
+                                <p>Stats</p>
+                            </a>
                         </div>
-                        
+
                         <div class="d-flex">
                             <a href="#" class="text-white"><i class="fa-solid fa-signal"></i></a>
-                            <a href="#" class="text-white text-decoration-none ms-3"><p>Signal</p></a>
+                            <a href="#" class="text-white text-decoration-none ms-3 bl-aside-none">
+                                <p>Signal</p>
+                            </a>
                         </div>
                     </div>
 
                     <div class="col bottom-aside">
                         <div class="d-flex">
                             <a href="#" class="text-white"><i class="fa-solid fa-gear"></i></a>
-                            <a href="#" class="text-white text-decoration-none ms-3"><p>Admin</p></a>
+                            <a href="#" class="text-white text-decoration-none ms-3 bl-aside-none">
+                                <p>Admin</p>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <main>
+        <main class="overflow-y-auto">
+            <div id="banner" class="bg-primary">
+                <div class="container-fluid">
+                    <div class="row row-cols-3 py-3 justify-content-between">
 
+
+                        <div class="order-2 col-12 order-md-1 col-md-4 col-lg-6 col-xl-6 col-xxl-5 pb-3 pb-md-0">
+                            <div>
+                                <h2 class="d-inline-block align-middle text-white">Boolean</h2>
+                                <button type="button" class="btn btn-sm bl-bg-btn bl-rounded d-inline-block">Piano blaze</button>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-sm bl-bg-btn bl-rounded">3 apps</button>
+                                <span>
+                                    <i class="fa-solid fa-angles-right text-white align-middle"></i>
+                                </span>
+                                <button type="button"
+                                    class="btn btn-sm bl-bg-btn bl-rounded d-none d-lg-inline-block">Boolean
+                                    mobile app</button>
+                                <button type="button"
+                                    class="btn btn-sm bl-bg-btn bl-rounded d-none d-lg-inline-block">Boolean
+                                    web app</button>
+                                <button type="button"
+                                    class="btn btn-sm bl-bg-btn bl-rounded d-none d-lg-inline-block">Boolean
+                                    blog app</button>
+                                <button type="button"
+                                    class="btn btn-sm bl-bg-btn bl-circle d-md-inline-block d-lg-none">+</button>
+                            </div>
+                        </div>
+
+                        <div class="order-3 col-12 order-md-2 col-md-3 col-lg-4 text-white align-middle">
+                            <p>Studenti online negli ultimi 30 minuti</p>
+                            <p class="display-6">125</p>
+                        </div>
+
+                        <div class="order-1 col-12 order-md-3 col-md-3 col-lg-2 col-xxl-3 text-white d-flex pb-sm-3">
+                            <p class="align-middle d-inline-block">Nuovo studente</p>
+                            <div class="square ms-2">
+                                <span>+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="topic">
+                <div class="container-fluid">
+                    <div class="row pt-3">
+                        <div class="col-12 col-lg-8">
+                            <div class="card">
+                                <div class="card-header bl-bg-card-header">
+                                    <h3>Prossime classi</h3>
+                                </div>
+                                <div class="card-body">
+                                    <table class="table bl-table-light table-hover small">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="fw-medium table-long-col">Nome</th>
+                                                <th scope="col" class="fw-medium text-center table-short-col bl-aside-none">Data
+                                                    inizio</th>
+                                                <th scope="col" class="fw-medium text-center table-short-col d-none d-md-table-cell">ROI</th>
+                                                <th scope="col" class="fw-medium text-center table-short-col">Stato</th>
+                                                <th scope="col" class="fw-medium text-center table-short-col">Azioni
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td scope="row"
+                                                    class="d-flex align-items-center table-long-col fw-medium bl-even">
+                                                    <div class="img-container me-2">
+                                                        <img src="./img/class-avatar.jpg" alt="Avatar"
+                                                            class="img-fluid">
+                                                    </div>
+                                                    Classe 75
+                                                </td>
+                                                <td class="text-center fw-medium table-short-col align-middle bl-aside-none">15 Feb
+                                                    2021</td>
+                                                <td class="text-center fw-medium table-short-col align-middle d-none d-md-table-cell">20%</td>
+                                                <td class="text-center fw-medium table-short-col"><span
+                                                        class="badge text-bg-success fw-normal align-middle">Done</span>
+                                                </td>
+                                                <td class="text-center fw-medium table-short-col">
+                                                    <button type="button"
+                                                        class="btn btn-sm btn-outline-secondary small align-middle"><i
+                                                            class="fa-solid fa-pencil"></i></button>
+                                                    <button type="button"
+                                                        class="btn btn-sm btn-outline-secondary small align-middle"><i
+                                                            class="fa-solid fa-trash-can"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row"
+                                                    class="d-flex align-items-center table-long-col fw-medium bl-even">
+                                                    <div class="img-container me-2">
+                                                        <img src="./img/class-avatar.jpg" alt="Avatar"
+                                                            class="img-fluid">
+                                                    </div>
+                                                    Classe 75
+                                                </td>
+                                                <td class="text-center fw-medium table-short-col align-middle bl-aside-none">16 Feb 2021</td>
+                                                <td class="text-center fw-medium table-short-col align-middle d-none d-md-table-cell">20%</td>
+                                                <td class="text-center fw-medium table-short-col"><span
+                                                        class="badge text-bg-success fw-normal align-middle">Done</span></td>
+                                                <td class="text-center fw-medium table-short-col">
+                                                    <button type="button"
+                                                        class="btn btn-sm btn-outline-secondary small"><i
+                                                            class="fa-solid fa-pencil"></i></button>
+                                                    <button type="button"
+                                                        class="btn btn-sm btn-outline-secondary small"><i
+                                                            class="fa-solid fa-trash-can"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row"
+                                                    class="d-flex align-items-center table-long-col fw-medium bl-even">
+                                                    <div class="img-container me-2">
+                                                        <img src="./img/class-avatar.jpg" alt="Avatar"
+                                                            class="img-fluid">
+                                                    </div>
+                                                    Classe 75
+                                                </td>
+                                                <td class="text-center fw-medium table-short-col align-middle bl-aside-none">17 Feb 2021</td>
+                                                <td class="text-center fw-medium table-short-col align-middle d-none d-md-table-cell">20%</td>
+                                                <td class="text-center fw-medium table-short-col"><span
+                                                        class="badge text-bg-warning fw-normal align-middle text-white">Process</span>
+                                                </td>
+                                                <td class="text-center fw-medium table-short-col">
+                                                    <button type="button"
+                                                        class="btn btn-sm btn-outline-secondary small"><i
+                                                            class="fa-solid fa-pencil"></i></button>
+                                                    <button type="button"
+                                                        class="btn btn-sm btn-outline-secondary small"><i
+                                                            class="fa-solid fa-trash-can"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row"
+                                                    class="d-flex align-items-center table-long-col fw-medium bl-even">
+                                                    <div class="img-container me-2">
+                                                        <img src="./img/class-avatar.jpg" alt="Avatar"
+                                                            class="img-fluid">
+                                                    </div>
+                                                    Classe 75
+                                                </td>
+                                                <td class="text-center fw-medium table-short-col align-middle bl-aside-none">18 Feb 2021</td>
+                                                <td class="text-center fw-medium table-short-col align-middle d-none d-md-table-cell">20%</td>
+                                                <td class="text-center fw-medium table-short-col"><span
+                                                        class="badge text-bg-success fw-normal align-middle">Done</span></td>
+                                                <td class="text-center fw-medium table-short-col">
+                                                    <button type="button"
+                                                        class="btn btn-sm btn-outline-secondary small"><i
+                                                            class="fa-solid fa-pencil"></i></button>
+                                                    <button type="button"
+                                                        class="btn btn-sm btn-outline-secondary small"><i
+                                                            class="fa-solid fa-trash-can"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row"
+                                                    class="d-flex align-items-center table-long-col fw-medium bl-even">
+                                                    <div class="img-container me-2">
+                                                        <img src="./img/class-avatar.jpg" alt="Avatar"
+                                                            class="img-fluid">
+                                                    </div>
+                                                    Classe 75
+                                                </td>
+                                                <td class="text-center fw-medium table-short-col align-middle bl-aside-none">19 Feb 2021</td>
+                                                <td class="text-center fw-medium table-short-col align-middle d-none d-md-table-cell">20%</td>
+                                                <td class="text-center fw-medium table-short-col"><span
+                                                        class="badge text-bg-danger fw-normal align-middle">Danger</span></td>
+                                                <td class="text-center fw-medium table-short-col">
+                                                    <button type="button"
+                                                        class="btn btn-sm btn-outline-secondary small"><i
+                                                            class="fa-solid fa-pencil"></i></button>
+                                                    <button type="button"
+                                                        class="btn btn-sm btn-outline-secondary small"><i
+                                                            class="fa-solid fa-trash-can"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row"
+                                                    class="d-flex align-items-center table-long-col fw-medium bl-even">
+                                                    <div class="img-container me-2">
+                                                        <img src="./img/class-avatar.jpg" alt="Avatar"
+                                                            class="img-fluid">
+                                                    </div>
+                                                    Classe 75
+                                                </td>
+                                                <td class="text-center fw-medium table-short-col align-middle bl-aside-none">20 Feb 2021</td>
+                                                <td class="text-center fw-medium table-short-col align-middle d-none d-md-table-cell">20%</td>
+                                                <td class="text-center fw-medium table-short-col"><span
+                                                        class="badge text-bg-success fw-normal align-middle">Done</span></td>
+                                                <td class="text-center fw-medium table-short-col">
+                                                    <button type="button"
+                                                        class="btn btn-sm btn-outline-secondary small"><i
+                                                            class="fa-solid fa-pencil"></i></button>
+                                                    <button type="button"
+                                                        class="btn btn-sm btn-outline-secondary small"><i
+                                                            class="fa-solid fa-trash-can"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row"
+                                                    class="d-flex align-items-center table-long-col fw-medium bl-even">
+                                                    <div class="img-container me-2">
+                                                        <img src="./img/class-avatar.jpg" alt="Avatar"
+                                                            class="img-fluid">
+                                                    </div>
+                                                    Classe 75
+                                                </td>
+                                                <td class="text-center fw-medium table-short-col align-middle bl-aside-none">21 Feb 2021</td>
+                                                <td class="text-center fw-medium table-short-col align-middle d-none d-md-table-cell">20%</td>
+                                                <td class="text-center fw-medium table-short-col"><span
+                                                        class="badge text-bg-danger fw-normal align-middle">Danger</span></td>
+                                                <td class="text-center fw-medium table-short-col">
+                                                    <button type="button"
+                                                        class="btn btn-sm btn-outline-secondary small"><i
+                                                            class="fa-solid fa-pencil"></i></button>
+                                                    <button type="button"
+                                                        class="btn btn-sm btn-outline-secondary small"><i
+                                                            class="fa-solid fa-trash-can"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row"
+                                                    class="d-flex align-items-center table-long-col fw-medium bl-even">
+                                                    <div class="img-container me-2">
+                                                        <img src="./img/class-avatar.jpg" alt="Avatar"
+                                                            class="img-fluid">
+                                                    </div>
+                                                    Classe 75
+                                                </td>
+                                                <td class="text-center fw-medium table-short-col align-middle bl-aside-none">22 Feb 2021</td>
+                                                <td class="text-center fw-medium table-short-col align-middle d-none d-md-table-cell">20%</td>
+                                                <td class="text-center fw-medium table-short-col"><span
+                                                        class="badge text-bg-success fw-normal align-middle">Done</span></td>
+                                                <td class="text-center fw-medium table-short-col">
+                                                    <button type="button"
+                                                        class="btn btn-sm btn-outline-secondary small"><i
+                                                            class="fa-solid fa-pencil"></i></button>
+                                                    <button type="button"
+                                                        class="btn btn-sm btn-outline-secondary small"><i
+                                                            class="fa-solid fa-trash-can"></i></button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
     </div>
 

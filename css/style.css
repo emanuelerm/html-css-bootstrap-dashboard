@@ -1,43 +1,114 @@
     /* GENERAL */
-body {
-    background-color: #F8F9Fa;
-}
+    body {
+        background-color: #F8F9Fa;
+    }
 
-.wrapper {
-    width: 100vw;
-    height: calc(100vh - 4.5rem);
-}
+    .wrapper {
+        width: 100vw;
+        height: calc(100vh - 4.5rem);
+    }
 
     /* Nav */
-.search-tab {
-    height: 2.5rem;
-}
+    .site-logo-mobile {
+        max-width: 28px;
+    }
 
-.search-tab input {
-    width: 70%;
-}
+    .search-tab {
+        height: 2.5rem;
+    }
 
-#aside {
-    width: 8.5rem;
-    height: 100%;
-    background-color: #051E34;
-    background-image: url("../img/sidebar-bg.png");
-}
+    .search-tab input {
+        width: 70%;
+    }
 
-main {
-    width: calc(100% - 8.5rem);
-    height: 100%;
-}
+    #aside {
+        width: 8.5rem;
+        height: 100%;
+        background-color: #051E34;
+        background-image: url("../img/sidebar-bg.png");
+    }
 
-.site-logo-mobile {
-    max-width: 28px;
-}
+    main {
+        width: calc(100% - 8.5rem);
+        height: 100%;
+    }
 
     /* Utility */
-.bl-bg-grey {
-    background-color: #E5E5E5;
-}
+    .bl-bg-grey {
+        background-color: #E5E5E5;
+    }
 
-.bl-text-orange {
-    color: var(--bs-orange);
-}
+    .bl-text-orange {
+        color: var(--bs-orange);
+    }
+
+    .bl-bg-btn {
+        background-color: #165BBA;
+        color: white;
+    }
+
+    .bl-rounded {
+        border-radius: 25px;
+    }
+
+    .bl-circle {
+        border-radius: 50%;
+    }
+
+    .bl-bg-card-header {
+        background-color: #F7F7F7;
+    }
+
+    .bl-table-light {
+        background-color: white;
+    }
+
+    .bl-even {
+        height: 3rem;
+    }
+
+    .square {
+        position: relative;
+        border: 1px solid white;
+        border-radius: 5px;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .square span {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        top: 0.75rem;
+        bottom: 1rem;
+        left: 0;
+        right: 0;
+    }
+
+    .img-container {
+        max-width: 1.1rem;
+    }
+
+    .table-long-col {
+        width: auto;
+    }
+
+    .table-short-col {
+        width: 6rem;
+    }
+
+        /* QUERY */
+    @media screen and (max-width: 991.98px) {
+        #aside {
+            width: 4rem;
+        }
+
+        main {
+            width: calc(100% - 4rem);
+        }
+
+        .bl-aside-none {
+            display: none;
+        }
+    }
