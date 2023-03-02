@@ -108,4 +108,8 @@
         .bl-aside-none {
             display: none;
         }
+
+        .offcanvas {
+            width: 100%;
+        }
     }

@@ -42,12 +42,13 @@
                     class="fa-solid fa-ellipsis-vertical me-3"></i></a>
             <a href="#" class="bl-text-orange" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fa-solid fa-bell"></i>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Profilo</a></li>
-                <li><a class="dropdown-item" href="#">Fatturazione</a></li>
-                <li><a class="dropdown-item" href="#">Logout</a></li>
-              </ul></a>
-            
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Profilo</a></li>
+                    <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+            </a>
+
         </div>
     </nav>
 
@@ -125,11 +126,26 @@
 
                         <div class="order-1 col-12 order-md-3 col-md-3 col-lg-2 col-xxl-3 text-white d-flex pb-sm-3">
                             <p class="align-middle d-inline-block">Nuovo studente</p>
-                            <button type="button" class="btn btn-outline-light d-inline-block square position-relative ms-2">
+                            <button type="button"
+                                class="btn btn-outline-light d-inline-block square position-relative ms-2"
+                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight">
                                 <span class="position-center">
-                                   + 
+                                    +
                                 </span>
                             </button>
+
+                            <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasRight"
+                                aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -148,7 +164,7 @@
                                             <tr>
                                                 <th scope="col" class="fw-medium table-long-col">Nome</th>
                                                 <th scope="col"
-                                                    class="fw-medium text-center table-short-col bl-aside-none">Data
+                                                    class="fw-medium text-center table-short-col d-none d-md-table-cell">Data
                                                     inizio</th>
                                                 <th scope="col"
                                                     class="fw-medium text-center table-short-col d-none d-md-table-cell">
@@ -169,7 +185,7 @@
                                                     Classe 75
                                                 </td>
                                                 <td
-                                                    class="text-center fw-medium table-short-col align-middle bl-aside-none">
+                                                    class="text-center fw-medium table-short-col align-middle d-none d-md-table-cell">
                                                     15 Feb
                                                     2021</td>
                                                 <td
@@ -197,7 +213,7 @@
                                                     Classe 75
                                                 </td>
                                                 <td
-                                                    class="text-center fw-medium table-short-col align-middle bl-aside-none">
+                                                    class="text-center fw-medium table-short-col align-middle d-none d-md-table-cell">
                                                     16 Feb 2021</td>
                                                 <td
                                                     class="text-center fw-medium table-short-col align-middle d-none d-md-table-cell">
@@ -224,7 +240,7 @@
                                                     Classe 75
                                                 </td>
                                                 <td
-                                                    class="text-center fw-medium table-short-col align-middle bl-aside-none">
+                                                    class="text-center fw-medium table-short-col align-middle d-none d-md-table-cell">
                                                     17 Feb 2021</td>
                                                 <td
                                                     class="text-center fw-medium table-short-col align-middle d-none d-md-table-cell">
@@ -251,7 +267,7 @@
                                                     Classe 75
                                                 </td>
                                                 <td
-                                                    class="text-center fw-medium table-short-col align-middle bl-aside-none">
+                                                    class="text-center fw-medium table-short-col align-middle d-none d-md-table-cell">
                                                     18 Feb 2021</td>
                                                 <td
                                                     class="text-center fw-medium table-short-col align-middle d-none d-md-table-cell">
@@ -278,7 +294,7 @@
                                                     Classe 75
                                                 </td>
                                                 <td
-                                                    class="text-center fw-medium table-short-col align-middle bl-aside-none">
+                                                    class="text-center fw-medium table-short-col align-middle d-none d-md-table-cell">
                                                     19 Feb 2021</td>
                                                 <td
                                                     class="text-center fw-medium table-short-col align-middle d-none d-md-table-cell">
@@ -305,7 +321,7 @@
                                                     Classe 75
                                                 </td>
                                                 <td
-                                                    class="text-center fw-medium table-short-col align-middle bl-aside-none">
+                                                    class="text-center fw-medium table-short-col align-middle d-none d-md-table-cell">
                                                     20 Feb 2021</td>
                                                 <td
                                                     class="text-center fw-medium table-short-col align-middle d-none d-md-table-cell">
@@ -332,7 +348,7 @@
                                                     Classe 75
                                                 </td>
                                                 <td
-                                                    class="text-center fw-medium table-short-col align-middle bl-aside-none">
+                                                    class="text-center fw-medium table-short-col align-middle d-none d-md-table-cell">
                                                     21 Feb 2021</td>
                                                 <td
                                                     class="text-center fw-medium table-short-col align-middle d-none d-md-table-cell">
@@ -359,7 +375,7 @@
                                                     Classe 75
                                                 </td>
                                                 <td
-                                                    class="text-center fw-medium table-short-col align-middle bl-aside-none">
+                                                    class="text-center fw-medium table-short-col align-middle d-none d-md-table-cell">
                                                     22 Feb 2021</td>
                                                 <td
                                                     class="text-center fw-medium table-short-col align-middle d-none d-md-table-cell">
@@ -398,7 +414,8 @@
                                             <div id="flush-collapseOne" class="accordion-collapse collapse"
                                                 aria-labelledby="flush-headingOne"
                                                 data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body small fw-medium">Clicca sul + in alto nella sezione <span class="text-primary">blu</span>.</div>
+                                                <div class="accordion-body small fw-medium">Clicca sul + in alto nella
+                                                    sezione <span class="text-primary">blu</span>.</div>
                                             </div>
                                         </div>
                                         <div class="accordion-item">
@@ -413,7 +430,8 @@
                                             <div id="flush-collapseTwo" class="accordion-collapse collapse"
                                                 aria-labelledby="flush-headingTwo"
                                                 data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body small fw-medium">Clicca sull'icona della <span class="bl-text-orange">campanella</span>.</div>
+                                                <div class="accordion-body small fw-medium">Clicca sull'icona della
+                                                    <span class="bl-text-orange">campanella</span>.</div>
                                             </div>
                                         </div>
                                         <div class="accordion-item">
@@ -429,7 +447,8 @@
                                                 aria-labelledby="flush-headingThree"
                                                 data-bs-parent="#accordionFlushExample">
                                                 <div class="accordion-body small fw-medium">
-                                                    Puoi utilizzarla in <span class="text-success">qualsiasi versione</span>.
+                                                    Puoi utilizzarla in <span class="text-success">qualsiasi
+                                                        versione</span>.
                                                 </div>
                                             </div>
                                         </div>
